@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Álvaro Fernández Cascajosa">
+        <meta name="description" content="Music and technology enthusiast from Seville, Spain">
+        <meta name="keywords" content="Álvaro, Fernández, Cascajosa, Web, Flutter, desarrollo, desarrollador, development, developer, full stack">
+
+        <title>Álvaro Fernández Cascajosa</title>
+
+        <!-- START CSS -->
+        <!-- BULMA CSS -->
+        <link type="text/css" rel="stylesheet" href="css/bulma.min.css">
+        <!-- PERSONAL CSS -->
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <!-- END CSS -->
+        <!-- START FONT AWESOME -->
+        <script src="js/font-awesome.js"></script>
+        <!-- END FONT AWESOME -->
+
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#fff">
+        <!-- END FAVICON -->
+
+        <!-- LD+JSON -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@graph": [
+                      {
+                            "@type": "Person",
+                            "address": {
+                                  "@type": "PostalAddress",
+                                  "addressLocality": "Sevilla, Andalucía, España"
+                            },
+                            "image": {
+                                  "@type": "ImageObject",
+                                  "contentUrl": "https://www.cascajosa.com/img/profile.png"
+                            },
+                            "jobTitle": [
+                                  "Full Stack Developer"
+                            ],
+                            "name": "Álvaro Fernández Cascajosa",
+                            "sameAs": "https://es.linkedin.com/in/alvfercas",
+                            "url": "https://www.cascajosa.com",
+                            "worksFor": [
+                                  {
+                                        "@type": "Organization",
+                                        "name": "Axel Springer España",
+                                        "url": "https://www.axelspringer.es/",
+                                        "member": {
+                                              "@type": "OrganizationRole",
+                                              "startDate": "2020-11"
+                                        }
+                                  }
+                            ],
+                            "knowsLanguage": [
+                                  {
+                                        "@type": "Language",
+                                        "name": "Español"
+                                  },
+                                  {
+                                        "@type": "Language",
+                                        "name": "Inglés"
+                                  }
+                            ],
+                            "description": "Music and technology enthusiast from Seville, Spain. More than 7 years improving in what I love."
+                      },
+                      {
+                            "@type": "WebPage",
+                            "url": "https://www.cascajosa.com",
+                            "reviewedBy": {
+                                  "@type": "Person",
+                                  "name": "Álvaro Fernández Cascajosa"
+                            }
+                      }
+                ]
+          }
+        </script>
+        <!-- END LD+JSON -->
+    </head>
+    <body class="handwritten-tag">
+        <a href="#" id="dark-mode-toggle" onClick="javascript:darkMode()">
+            <span class="icon is-large">
+                <i id="dark-mode-icon" class="fas fa-lg fa-moon"></i>
+            </span>
+        </a>
+        <div class="container">
+            <!-- INTRODUCTION -->
+            <section id="introduction" class="section">
+                <div class="columns is-vcentered is-mobile is-multiline">
+                    <!-- IMAGE -->
+                    <div class="column is-12-mobile px-0 is-5-tablet is-3-desktop has-text-centered">
+                        <div class="handwritten-tag" data-handwritten-tag="img">
+                            <figure class="image">
+                                <img class="is-rounded has-shadow" src="img/profile.png" alt="profile">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- END IMAGE -->
+                    <!-- DESCRIPTION -->
+                    <div class="column is-12-mobile px-0 is-offset-1-desktop">
+                        <h1 class="subtitle is-3 handwritten-tag has-text-centered-mobile">
+                            Hi, I'm <strong>Álvaro</strong>.
+                        </h1>
+                        <div class="clear"></div>
+                        <div class="" data-handwritten-tag="p">
+                            <p class="subtitle is-5 handwritten-tag has-text-centered-mobile">
+                                Music and technology enthusiast from <strong>Seville</strong>, Spain. More than <strong>7 years</strong> improving in what I love.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- END DESCRIPTION -->
+                </div>
+            </section>
+            <!-- END INTRODUCTION -->
+            <!-- SKILLS -->
+            <section class="section handwritten-tag">
+                <!-- WRAPPER -->
+                <div class="wrapper">
+                    <h2 class="subtitle is-4 handwritten-tag">
+                        <strong>Skills</strong>
+                    </h2>
+                    <div class="columns mb-0 is-vcentered">
+                        <div class="column tags are-medium">
+                            <p class="subtitle is-6 mb-3">Flutter</p>
+                            <progress class="progress is-primary" value="95" max="100">95%</progress>
+                            <p class="subtitle is-6 mb-3">Javascript</p>
+                            <progress class="progress is-primary" value="95" max="100">95%</progress>
+                            <p class="subtitle is-6 mb-3">Codeigniter</p>
+                            <progress class="progress is-primary" value="95" max="100">95%</progress>
+                            <p class="subtitle is-6 mb-3">NextJS</p>
+                            <progress class="progress is-primary" value="75" max="100">75%</progress>
+                        </div>
+                        <div id="more-skills" class="column panel has-shadow is-offset-1-desktop is-offset-1-tablet has-background-light">
+                            <h3 class="subtitle is-5 mb-3 handwritten-tag">
+                                <strong>Languages</strong>
+                            </h3>
+                            <div class="tags are-large">
+                                <span class="tag is-light is-info">Spanish (Native)</span>
+                                <span class="tag is-light is-info">English</span>
+                            </div>
+                            <h3 class="subtitle is-5 mb-3 handwritten-tag">
+                                <strong>And more …</strong>
+                            </h3>
+                            <div class="tags are-medium">
+                                <span class="tag is-light is-primary">API RESTful</span>
+                                <span class="tag is-light is-primary">Push notifications</span>
+                                <span class="tag is-light is-primary">PHP</span>
+                                <span class="tag is-light is-primary">HTML</span>
+                                <span class="tag is-light is-primary">CSS</span>
+                                <span class="tag is-light is-primary">MySQL</span>
+                                <span class="tag is-light is-primary">Drupal</span>
+                                <span class="tag is-light is-primary">SwiftUI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END WRAPPER -->
+            </section>
+            <!-- END SKILLS -->
+            <!-- WORK EXPERIENCE -->
+            <section class="section handwritten-tag">
+                <!-- WRAPPER -->
+                <div class="wrapper">
+                    <h2 class="subtitle is-4 handwritten-tag">
+                        <strong>Experience</strong>
+                    </h2>
+                    <div class="columns mb-0 wrapper">
+                        <div class="column panel has-shadow is-12 handwritten-tag has-background-light" data-handwritten-tag="table">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr class="has-background-light">
+                                        <td><strong>Nov 2020 - Today</strong></td>
+                                        <td>
+                                            <strong class="is-uppercase has-text-info">Full Stack Web Developer</strong>
+                                            <div class="organization">
+                                                <a href="https://www.axelspringer.es" target="_blank">
+                                                    Axel Springer SE <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
+                                                </a>
+                                            </div>
+                                            <p>&#x2022; Maintenance and development with NextJS, React and Drupal</p>
+                                            <p>&#x2022; Multiple integrations from advertising to user focused platform "Piano"</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="has-background-light">
+                                        <td><strong>Jun 2018 - Nov 2020</strong></td>
+                                        <td>
+                                            <strong class="is-uppercase has-text-info">Full Stack Web/App Developer</strong>
+                                            <div class="organization">
+                                                <a href="https://www.sulime.net" target="_blank">
+                                                    Sulime Diseño de Soluciones S.L.U <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
+                                                </a>
+                                            </div>
+                                            <p>&#x2022; Analysis, development, delpoyment and maintenance of several projects in PHP, Codeigniter and Flutter for Andalusian Health Public Service (SAS)</p>
+                                            <p>&#x2022; Bidirectional integrations with RESTful and SOAP services with the Andalusian Health Public Service (SAS)</p>
+                                            <p>&#x2022; WebSockets, API and push notification services</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="has-background-light">
+                                        <td><strong>Mar 2015 - Jun 2018</strong></td>
+                                        <td>
+                                            <strong class="is-uppercase has-text-info">Full Stack Web Developer</strong>
+                                            <div class="has-text-grey organization">Elitech Lab</div>
+                                            <p>&#x2022; Analysis, development, delpoyment to AWS and maintenance of several projects in PHP, Codeigniter, Drupal and Joomla</p>
+                                            <p>&#x2022; Project management and teach lead</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- END WRAPPER -->
+            </section>
+            <!-- END WORK EXPERIENCE -->
+            <!-- PROJECTS -->
+            <section id="projects" class="section handwritten-tag">
+                <!-- WRAPPER -->
+                <div class="wrapper">
+                    <h2 class="subtitle is-4 handwritten-tag">
+                        <strong>Worked on</strong>
+                    </h2>
+                    <!-- WEB PROJECTS WRAPPER -->
+                    <div id="web" class="columns is-multiline web">
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/ab-logo.png" alt="Auto Bild">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.autobild.es" target="_blank">Auto Bild <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/bi-logo.png" alt="Business Insider">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.businessinsider.es" target="_blank">Business Insider <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/ch-logo.png" alt="Computer Hoy">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.computerhoy.com" target="_blank">Computer Hoy <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/hc-logo.png" alt="Hobby Consolas">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.hobbyconsolas.com" target="_blank">Hobby Consolas <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/tg-logo.png" alt="Top Gear">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.topgear.es" target="_blank">Top Gear <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/ph-logo.png" alt="PharmUX">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.pharmux.es" target="_blank">PharmUX <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/tc-logo.png" alt="Teleconsulta" style="width: 55px">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            Teleconsulta (SAS)
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
+                            <div class="card has-shadow has-shadow-animated">
+                                <div id="card-header" class="browser-bar">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="img/sb-logo.png" alt="School Bus Tracker">
+                                    </figure>
+                                </div>
+                                <footer class="card-footer has-background-light">
+                                    <h4 class="card-footer-item">
+                                        <span>
+                                            View <a href="https://www.schoolbustrackerapp.com" target="_blank">School Bus Tracker <i class="fa fa-xs fa-arrow-up-right-from-square"></i></a>
+                                        </span>
+                                    </h4>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WEB PROJECTS WRAPPER -->
+                    <!-- APP PROJECTS WRAPPER -->
+                    <div id="app" class="columns mb-0 has-text-centered">
+                        <div class="column is-10 is-offset-1">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="columns">
+                                        <div class="column is-4 is-offset-4 is-6-mobile is-offset-3-mobile">
+                                            <div class="handwritten-tag" data-handwritten-tag="img">
+                                                <div class="card has-shadow app-icon">
+                                                    <div class="card-image">
+                                                        <figure class="image">
+                                                            <img src="img/ph-app-icon.png" alt="PharmUX">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column is-6 is-4-fullhd is-offset-2-fullhd is-6-tablet store-item">
+                                            <a href="https://apps.apple.com/es/app/pharmux/id1501512674" target="_blank">
+                                                <figure class="image has-shadow has-shadow-animated">
+                                                    <img src="img/ap-button.png" alt="App Store">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="column is-6 is-4-fullhd is-6-tablet store-item">
+                                            <a href="https://play.google.com/store/apps/details?id=com.sulime.pharmux&hl=es_419&gl=US" target="_blank">
+                                                <figure class="image has-shadow has-shadow-animated">
+                                                    <img src="img/gp-button.png" alt="Google Play">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="is-divider"></div>
+                                <div class="column">
+                                    <div class="columns">
+                                        <div class="column is-4 is-offset-4 is-6-mobile is-offset-3-mobile">
+                                            <div class="handwritten-tag" data-handwritten-tag="img">
+                                                <div class="card has-shadow app-icon">
+                                                    <div class="card-image">
+                                                        <figure class="image">
+                                                            <img src="img/dq-app-icon.png" alt="DermaQ SD">
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column is-6 is-4-fullhd is-offset-2-fullhd is-6-tablet store-item">
+                                            <a href="https://apps.apple.com/es/app/dermaq-sd/id1516314244" target="_blank">
+                                                <figure class="image has-shadow has-shadow-animated">
+                                                    <img src="img/ap-button.png" alt="App Store">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="column is-6 is-4-fullhd is-6-tablet store-item">
+                                            <a href="https://play.google.com/store/apps/details?id=com.sulime.dermaqsd&hl=es&gl=US" target="_blank">
+                                                <figure class="image has-shadow has-shadow-animated">
+                                                    <img src="img/gp-button.png" alt="Google Play">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END APP PROJECTS WRAPPER -->
+                </div>
+                <!-- END WRAPPER -->
+            </section>
+            <!-- END PROJECTS -->
+            <!-- FOOTER -->
+            <section id="footer" class="section handwritten-tag" data-handwritten-tag="footer">
+                <div class="columns mb-0 mt-0">
+                    <div class="column panel has-shadow has-shadow-animated is-10 is-offset-1 is-10-mobile is-offset-1-mobile has-background-light">
+                        <div class="columns is-multiline">
+                            <div class="column is-12 has-text-centered">
+                                <a href="mailto:alvarofernandez@cascajosa.com" target="_blank" class="has-text-dark pr-5">
+                                    <span class="icon-tex">
+                                        <span class="icon is-large">
+                                            <i class="fas fa-2x fa-envelope"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a href="https://github.com/Alvfercas" target="_blank" class="has-text-dark">
+                                    <span class="icon-text">
+                                        <span class="icon is-large">
+                                            <i class="fas fa-2x fa-brands fa-github"></i>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="column is-12 has-text-centered">
+                                <p class="content is-5">Website handcrafted by me with <strong>love</strong> <i class="fas fa-heart has-text-danger"></i></p>
+                            </div>
+                            <div class="column is-12 has-text-centered">
+                                <a href="https://bulma.io">
+                                    <img id="made-with-bulma" src="img/made-with-bulma.png" alt="Made with Bulma" width="163" height="31">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END FOOTER -->
+        </div>
+        <script src="js/helper.js"></script>
+    </body>
+</html>
