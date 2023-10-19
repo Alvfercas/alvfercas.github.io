@@ -45,7 +45,7 @@ section.section {
     padding-bottom: 1.25rem;
 }
 
-section .wrapper{
+section .wrapper {
     padding: 0 1.15rem;
 }
 
@@ -95,7 +95,7 @@ div.organization {
     background-color: white;
     margin: 0px 2px;
 }
-  
+
 #projects #card-header.browser-bar .circle:nth-child(1) {
     background-color: #ff5f58;
 }
@@ -133,7 +133,7 @@ div.organization {
     margin: 0 auto;
 }
 
-#projects #app .store-item figure{
+#projects #app .store-item figure {
     border-radius: 1rem;
 }
 
@@ -152,7 +152,10 @@ body.dark-mode {
     background-color: #34495e;
 }
 
-body.dark-mode .title, body.dark-mode .subtitle, body.dark-mode p, body.dark-mode span:not(.qwitcher-grypen) {
+body.dark-mode .title,
+body.dark-mode .subtitle,
+body.dark-mode p,
+body.dark-mode span:not(.qwitcher-grypen) {
     color: white;
 }
 
@@ -164,7 +167,7 @@ body.dark-mode a:hover {
     color: #16a085;
 }
 
-body.dark-mode .card { 
+body.dark-mode .card {
     background-color: transparent;
 }
 
@@ -178,8 +181,18 @@ body.dark-mode .has-background-light {
 
 /** ANIMATIONS **/
 @keyframes beat {
-    0%, 20%, 50%, 80% { transform: scale(1,1); }
-    40%, 60% { transform: scale(1.25, 1.25); }
+
+    0%,
+    20%,
+    50%,
+    80% {
+        transform: scale(1, 1);
+    }
+
+    40%,
+    60% {
+        transform: scale(1.25, 1.25);
+    }
 }
 
 /** MEDIA QUERIES **/
@@ -198,7 +211,7 @@ body.dark-mode .has-background-light {
         margin: 1.5rem 2.25rem 0;
     }
 
-    #projects #web > .column {
+    #projects #web>.column {
         margin: 0 auto;
         max-width: 350px;
     }
@@ -206,7 +219,7 @@ body.dark-mode .has-background-light {
     #projects #web .card-image {
         height: 200px;
     }
-    
+
     #projects #web .card-image img {
         width: 150px;
     }
