@@ -17,6 +17,11 @@ elementsWithTags.forEach((element) => {
   element.insertAdjacentElement("beforeend", closeTag);
 });
 
+// Match system aspect preferences
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  darkMode();
+}
+
 function darkMode() {
     const body = document.body;
     const isDarkMode = body.classList.toggle("dark-mode");
