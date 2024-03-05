@@ -164,6 +164,14 @@ div.organization {
     animation: 1.5s ease 0s infinite beat;
 }
 
+#footer span.icon{
+    transition: 0.3s;
+}
+
+#footer span.icon:hover{
+    color:#485fc7;
+}
+
 /** DARK MODE **/
 
 body.dark-mode {
@@ -211,6 +219,10 @@ body.dark-mode #projects #app .store-buttons button b {
 body.dark-mode #projects #app .store-buttons button:hover {
     color: white;
     border-color: #16a085;
+}
+
+body.dark-mode #footer span.icon:hover {
+    color: #16a085;
 }
 
 /** ANIMATIONS **/
