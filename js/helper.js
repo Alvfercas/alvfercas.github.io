@@ -31,5 +31,15 @@ function darkMode() {
     darkModeIcon.classList.toggle("fa-sun", isDarkMode);
     darkModeIcon.classList.toggle("fa-moon", !isDarkMode);
     document.querySelector("meta[name='theme-color']").content = themeColor;
-  }
-  
+}
+
+const dateDifferenceInYears = (dateInitial, dateFinal) => {
+  const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365;
+  return (dateFinal - dateInitial) / millisecondsPerYear;
+}
+
+const dateInitial = new Date('2015-03-01');
+const dateFinal = new Date();
+const yearsDifference = dateDifferenceInYears(dateInitial, dateFinal);
+
+document.getElementById('yearsDifference').textContent = yearsDifference.toFixed() + " years";
