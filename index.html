@@ -1,556 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Álvaro Fernández Cascajosa">
-        <meta name="description" content="Music and technology enthusiast from Seville, Spain">
-        <meta name="keywords" content="Álvaro, Fernández, Cascajosa, Web, Flutter, desarrollo, desarrollador, development, developer, full stack">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Álvaro Fernández Cascajosa" />
+    <meta
+      name="description"
+      content="Music and technology enthusiast from Seville, Spain"
+    />
+    <meta
+      name="keywords"
+      content="Álvaro, Fernández, Cascajosa, Web, Flutter, desarrollo, desarrollador, development, developer, full stack"
+    />
 
-        <title>Álvaro Fernández Cascajosa</title>
+    <title>Álvaro Fernández Cascajosa</title>
 
-        <!-- START CSS -->
-        <!-- BULMA CSS -->
-        <link type="text/css" rel="stylesheet" href="css/bulma.min.css">
-        <!-- PERSONAL CSS -->
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <!-- END CSS -->
-        <!-- START FONT AWESOME -->
-        <script src="js/font-awesome.js"></script>
-        <!-- END FONT AWESOME -->
+    <!-- START CSS -->
+    <!-- BULMA CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
+    <!-- PERSONAL CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- END CSS -->
+    <!-- START FONT AWESOME -->
+    <script src="js/font-awesome.js"></script>
+    <!-- END FONT AWESOME -->
 
-        <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#34495e">
-        <meta name="msapplication-TileColor" content="#34495e">
-        <meta name="theme-color" content="#fff">
-        <!-- END FAVICON -->
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicon/safari-pinned-tab.svg"
+      color="#34495e"
+    />
+    <meta name="msapplication-TileColor" content="#34495e" />
+    <meta name="theme-color" content="#fff" />
+    <!-- END FAVICON -->
 
-        <!-- LD+JSON -->
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@graph": [
-                      {
-                            "@type": "Person",
-                            "address": {
-                                  "@type": "PostalAddress",
-                                  "addressLocality": "Sevilla, Andalucía, España"
-                            },
-                            "image": {
-                                  "@type": "ImageObject",
-                                  "contentUrl": "https://www.cascajosa.com/img/profile.png"
-                            },
-                            "jobTitle": [
-                                  "Full Stack Developer"
-                            ],
-                            "name": "Álvaro Fernández Cascajosa",
-                            "sameAs": "https://es.linkedin.com/in/alvfercas",
-                            "url": "https://www.cascajosa.com",
-                            "worksFor": [
-                                  {
-                                        "@type": "Organization",
-                                        "name": "VASS Company",
-                                        "url": "https://vasscompany.com/spain/es/",
-                                        "member": {
-                                              "@type": "OrganizationRole",
-                                              "startDate": "2024-09"
-                                        }
-                                  }
-                            ],
-                            "knowsLanguage": [
-                                  {
-                                        "@type": "Language",
-                                        "name": "Español"
-                                  },
-                                  {
-                                        "@type": "Language",
-                                        "name": "Inglés"
-                                  }
-                            ],
-                            "description": "In love with nature, music and technology. I started this lovely journey of programming 7 years ago."
-                      },
-                      {
-                            "@type": "WebPage",
-                            "url": "https://www.cascajosa.com",
-                            "reviewedBy": {
-                                  "@type": "Person",
-                                  "name": "Álvaro Fernández Cascajosa"
-                            }
-                      }
-                ]
+    <!-- LD+JSON -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sevilla, Andalucía, España"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "contentUrl": "https://www.cascajosa.com/img/profile.png"
+            },
+            "jobTitle": ["Full Stack Developer"],
+            "name": "Álvaro Fernández Cascajosa",
+            "sameAs": "https://es.linkedin.com/in/alvfercas",
+            "url": "https://www.cascajosa.com",
+            "worksFor": [
+              {
+                "@type": "Organization",
+                "name": "VASS Company",
+                "url": "https://vasscompany.com/spain/es/",
+                "member": {
+                  "@type": "OrganizationRole",
+                  "startDate": "2024-09"
+                }
+              }
+            ],
+            "knowsLanguage": [
+              {
+                "@type": "Language",
+                "name": "Español"
+              },
+              {
+                "@type": "Language",
+                "name": "Inglés"
+              }
+            ],
+            "description": "In love with nature, music and technology. I started this lovely journey of programming 7 years ago."
+          },
+          {
+            "@type": "WebPage",
+            "url": "https://www.cascajosa.com",
+            "reviewedBy": {
+              "@type": "Person",
+              "name": "Álvaro Fernández Cascajosa"
+            }
           }
-        </script>
-        <!-- END LD+JSON -->
-    </head>
-    <body class="handwritten-tag">
-        <a href="#" id="dark-mode-toggle" onClick="javascript:darkMode()">
-            <span class="icon is-large">
-                <i id="dark-mode-icon" class="fas fa-lg fa-moon"></i>
-            </span>
-        </a>
-        <div class="container">
-            <!-- INTRODUCTION -->
-            <section id="introduction" class="section">
-                <div class="columns is-vcentered is-mobile is-multiline">
-                    <!-- IMAGE -->
-                    <div class="column is-12-mobile px-0 is-5-tablet is-3-desktop has-text-centered">
-                        <div class="handwritten-tag" data-handwritten-tag="img">
-                            <figure class="image">
-                                <img class="is-rounded has-shadow" src="img/profile.png" alt="profile">
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- END IMAGE -->
-                    <!-- DESCRIPTION -->
-                    <div class="column is-12-mobile px-0 is-offset-1-desktop">
-                        <h1 class="subtitle is-2 handwritten-tag has-text-centered-mobile">
-                            Hi, I'm <strong>Álvaro</strong>.
-                        </h1>
-                        <div class="clear"></div>
-                        <p class="subtitle is-5 handwritten-tag has-text-centered-mobile">
-                            In love with nature, music and technology. I started this lovely journey of programming <strong id="yearsDifference"></strong> ago.
-                        </p>
-                        <p class="subtitle is-5 handwritten-tag has-text-centered-mobile">
-                            Always ready for new challenges
-                        </p>
-                    </div>
-                    <!-- END DESCRIPTION -->
-                </div>
-            </section>
-            <!-- END INTRODUCTION -->
-            <!-- SKILLS -->
-            <section class="section handwritten-tag">
-                <!-- WRAPPER -->
-                <div class="wrapper">
-                    <h2 class="subtitle is-3 handwritten-tag">
-                        <strong>Skills</strong>
-                    </h2>
-                    <div class="columns mb-0 is-vcentered">
-                        <div class="column mb-5">
-                            <p class="subtitle is-6 mb-3">SwiftUI</p>
-                            <progress class="progress is-primary" value="95" max="100">95%</progress>
-                            <p class="subtitle is-6 mb-3">Flutter</p>
-                            <progress class="progress is-primary" value="95" max="100">95%</progress>
-                            <p class="subtitle is-6 mb-3">NextJS</p>
-                            <progress class="progress is-primary" value="90" max="100">90%</progress>
-                            <p class="subtitle is-6 mb-3">Codeigniter</p>
-                            <progress class="progress is-primary" value="85" max="100">85%</progress>
-                        </div>
-                        <div id="more-skills" class="column panel py-4 px-5 pb-5 has-shadow is-offset-1-desktop is-offset-1-tablet has-background-light">
-                            <h3 class="subtitle is-5 mb-3 handwritten-tag">
-                                <strong>Languages</strong>
-                            </h3>
-                            <div class="tags are-large">
-                                <span class="tag is-light is-info">Spanish (Native)</span>
-                                <span class="tag is-light is-info">English</span>
-                            </div>
-                            <h3 class="subtitle is-5 mb-3 handwritten-tag">
-                                <strong>And more …</strong>
-                            </h3>
-                            <div class="tags are-medium">
-                                <span class="tag is-light is-primary">API RESTful</span>
-                                <span class="tag is-light is-primary">Push notifications</span>
-                                <span class="tag is-light is-primary">PHP</span>
-                                <span class="tag is-light is-primary">HTML</span>
-                                <span class="tag is-light is-primary">Javascript</span>
-                                <span class="tag is-light is-primary">CSS</span>
-                                <span class="tag is-light is-primary">MySQL</span>
-                                <span class="tag is-light is-primary">Drupal</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END WRAPPER -->
-            </section>
-            <!-- END SKILLS -->
-            <!-- WORK EXPERIENCE -->
-            <section class="section handwritten-tag">
-                <!-- WRAPPER -->
-                <div class="wrapper">
-                    <h2 class="subtitle is-3 handwritten-tag">
-                        <strong>Experience</strong>
-                    </h2>
-                    <div class="columns mb-0 wrapper">
-                        <div class="column panel px-5 has-shadow is-12 handwritten-tag has-background-light" data-handwritten-tag="table">
-                            <table class="table mb-0">
-                                <tbody>
-                                    <tr class="has-background-light">
-                                        <td><strong>Sep 2024 - Today</strong></td>
-                                        <td>
-                                            <strong class="is-uppercase has-text-info">Drupal Developer</strong>
-                                            <div class="organization">
-                                                <a href="https://vasscompany.com/spain/es/" target="_blank">
-                                                    VASS Company <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
-                                                </a>
-                                            </div>
-                                            <p>&#x2022; Drupal development</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="has-background-light">
-                                        <td><strong>Nov 2020 - Sep 2024</strong></td>
-                                        <td>
-                                            <strong class="is-uppercase has-text-info">Full Stack Web Developer</strong>
-                                            <div class="organization">
-                                                <a href="https://www.axelspringer.es" target="_blank">
-                                                    Axel Springer SE <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
-                                                </a>
-                                            </div>
-                                            <p>&#x2022; Maintenance and development with NextJS, React and Drupal</p>
-                                            <p>&#x2022; Multiple integrations from advertising to user focused platform "Piano"</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="has-background-light">
-                                        <td><strong>Jun 2018 - Nov 2020</strong></td>
-                                        <td>
-                                            <strong class="is-uppercase has-text-info">Full Stack Web/App Developer</strong>
-                                            <div class="organization">
-                                                <a href="https://www.sulime.net" target="_blank">
-                                                    Sulime Diseño de Soluciones S.L.U <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
-                                                </a>
-                                            </div>
-                                            <p>&#x2022; Analysis, development, delpoyment and maintenance of several projects in PHP, Codeigniter and Flutter for Andalusian Health Public Service (SAS)</p>
-                                            <p>&#x2022; Bidirectional integrations with RESTful and SOAP services with the Andalusian Health Public Service (SAS)</p>
-                                            <p>&#x2022; WebSockets, API and push notification services</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="has-background-light">
-                                        <td><strong>Mar 2015 - Jun 2018</strong></td>
-                                        <td>
-                                            <strong class="is-uppercase has-text-info">Full Stack Web Developer</strong>
-                                            <div class="has-text-grey organization">Elitech Lab</div>
-                                            <p>&#x2022; Analysis, development, delpoyment to AWS and maintenance of several projects in PHP, Codeigniter, Drupal and Joomla</p>
-                                            <p>&#x2022; Project management and teach lead</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- END WRAPPER -->
-            </section>
-            <!-- END WORK EXPERIENCE -->
-            <!-- PROJECTS -->
-            <section id="projects" class="section handwritten-tag">
-                <!-- WRAPPER -->
-                <div class="wrapper">
-                    <h2 class="subtitle is-3 handwritten-tag">
-                        <strong>Worked on</strong>
-                    </h2>
-                    <!-- WEB PROJECTS WRAPPER -->
-                    <div id="web" class="columns is-multiline web">
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/ab-logo.png" alt="Auto Bild">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.autobild.es" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>Auto Bild <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/bi-logo.png" alt="Business Insider">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.businessinsider.es" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>Business Insider <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/ch-logo.png" alt="Computer Hoy">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.computerhoy.com" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>Computer Hoy <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/hc-logo.png" alt="Hobby Consolas">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.hobbyconsolas.com" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>Hobby Consolas <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/tg-logo.png" alt="Top Gear">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.topgear.es" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>Top Gear <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/ph-logo.png" alt="PharmUX">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.pharmux.es" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>PharmUX <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/tc-logo.png" alt="Teleconsulta" style="width: 55px">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <h4 class="card-footer-item">
-                                        <span>
-                                            Teleconsulta (SAS)
-                                        </span>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column is-3 handwritten-tag has-text-centered py-0" data-handwritten-tag="img">
-                            <div class="card has-shadow has-shadow-animated">
-                                <div id="card-header" class="browser-bar">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                                <div class="card-image">
-                                    <figure class="image">
-                                        <img src="img/sb-logo.png" alt="School Bus Tracker">
-                                    </figure>
-                                </div>
-                                <div class="card-footer has-background-light">
-                                    <a href="https://www.schoolbustrackerapp.com" target="_blank">
-                                        <h4 class="card-footer-item">
-                                            <span>
-                                                View <b>School Bus Tracker <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </span>
-                                        </h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END WEB PROJECTS WRAPPER -->
-                    <!-- APP PROJECTS WRAPPER -->
-                    <div id="app" class="columns mb-0 has-text-centered">
-                        <div class="column is-12">
-                            <!-- FEATURED APP PROJECT -->
-                            <div class="columns is-centered">
-                                <div class="column is-12">
-                                    <h3 class="subtitle is-3 m-0 handwritten-tag">
-                                        <strong>Sevimetría</strong>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="columns mb-6">
-                                <div class="column pt-0 is-3-desktop is-3-tablet handwritten-tag" data-handwritten-tag="img">
-                                    <div class="card has-shadow app-icon card-image">
-                                        <figure class="image">
-                                            <img src="img/sev-app-icon.png" alt="Sevimetría">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="column has-text-left">
-                                    <p class="subtitle is-5 handwritten-tag"> <strong>Sevimetría</strong> is a sleek and intuitive mobile app designed to keep you informed about real-time train arrivals on the <strong>Seville metro</strong>. Built with <strong>SwiftUI</strong>, Sevimetría provides up-to-date information on metro stops, train schedules, pricing and the remaining time for the next arrivals. </p>
-                                    <p class="subtitle is-5 handwritten-tag"> With a simple and user-friendly interface, view detailed stop information, and track live updates to make sure you’re always on time. </p>
-                                    <div class="columns has-text-right has-text-centered-mobile mt-2 store-buttons">
-                                        <div class="column">
-                                            <!-- <a href="https://apps.apple.com/es/app/###" target="_blank"> -->
-                                                <button class="button has-background-light has-shadow has-shadow-animated">
-                                                    Coming soon ™ ...
-                                                </button>
-                                            <!-- </a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END FEATURED APP PROJECT -->
-                            <div class="columns is-centered">
-                                <div class="column mb-6">
-                                    <h3 class="subtitle is-5 m-0 handwritten-tag">
-                                        <strong>PharmUX</strong>
-                                    </h3>
-                                    <div class="column pt-0 is-3-desktop is-4-tablet is-4-mobile m-auto handwritten-tag" data-handwritten-tag="img">
-                                        <div class="card has-shadow app-icon card-image">
-                                            <figure class="image">
-                                                <img src="img/ph-app-icon.png" alt="PharmUX">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="columns is-justify-content-space-evenly mt-2 store-buttons">
-                                        <a href="https://apps.apple.com/es/app/pharmux/id1501512674" target="_blank">
-                                            <button class="button has-background-light has-shadow has-shadow-animated">
-                                                On <b>App Store <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </button>
-                                        </a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.sulime.pharmux&hl=es_419&gl=US" target="_blank">
-                                            <button class="button has-background-light has-shadow has-shadow-animated">
-                                                On <b>Google Play <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <h3 class="subtitle is-5 m-0 handwritten-tag">
-                                        <strong>DermaQ</strong>
-                                    </h3>
-                                    <div class="column pt-0 is-3-desktop is-4-tablet is-4-mobile m-auto handwritten-tag" data-handwritten-tag="img">
-                                        <div class="card has-shadow app-icon">
-                                            <div class="card-image">
-                                                <figure class="image">
-                                                    <img src="img/dq-app-icon.png" alt="DermaQ SD">
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="columns is-justify-content-space-evenly mt-2 store-buttons">
-                                        <a href="https://apps.apple.com/es/app/dermaq-sd/id1516314244" target="_blank">
-                                            <button class="button has-background-light has-shadow has-shadow-animated">
-                                                On <b>App Store <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </button>
-                                        </a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.sulime.dermaqsd&hl=es&gl=US" target="_blank">
-                                            <button class="button has-background-light has-shadow has-shadow-animated">
-                                                On <b>Google Play <i class="fa fa-xs fa-arrow-up-right-from-square"></i></b>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END APP PROJECTS WRAPPER -->
-                </div>
-                <!-- END WRAPPER -->
-            </section>
-            <!-- END PROJECTS -->
-            <!-- FOOTER -->
-            <section id="footer" class="section handwritten-tag" data-handwritten-tag="footer">
-                <div class="columns mb-0 mt-0">
-                    <div class="column panel has-shadow has-shadow-animated is-10 is-offset-1 is-10-mobile is-offset-1-mobile has-background-light">
-                        <div class="columns is-multiline">
-                            <div class="column is-12 has-text-centered">
-                                <a href="mailto:alvarofernandez@cascajosa.com" target="_blank" class="has-text-dark pr-5">
-                                    <span class="icon-text">
-                                        <span class="icon is-large">
-                                            <i class="fas fa-2x fa-envelope"></i>
-                                        </span>
-                                    </span>
-                                </a>
-                                <a href="https://github.com/Alvfercas" target="_blank" class="has-text-dark">
-                                    <span class="icon-text">
-                                        <span class="icon is-large">
-                                            <i class="fas fa-2x fa-brands fa-github"></i>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="column is-12 pb-5 has-text-centered">
-                                <p class="content is-5">Website handcrafted by me with <strong>love</strong> <i class="fas fa-heart has-text-danger"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END FOOTER -->
+        ]
+      }
+    </script>
+    <!-- END LD+JSON -->
+  </head>
+  <body class="handwritten-tag">
+    <a href="#" id="dark-mode-toggle" onClick="javascript:darkMode()">
+      <span class="icon is-large">
+        <i id="dark-mode-icon" class="fas fa-lg fa-moon"></i>
+      </span>
+    </a>
+    <div class="container">
+      <!-- INTRODUCTION -->
+      <section id="introduction" class="section">
+        <div class="columns is-vcentered is-mobile is-multiline">
+          <!-- IMAGE -->
+          <div
+            class="column is-12-mobile px-0 is-5-tablet is-3-desktop has-text-centered"
+          >
+            <div class="handwritten-tag" data-handwritten-tag="img">
+              <figure class="image">
+                <img
+                  class="is-rounded has-shadow"
+                  src="img/profile.png"
+                  alt="profile"
+                />
+              </figure>
+            </div>
+          </div>
+          <!-- END IMAGE -->
+          <!-- DESCRIPTION -->
+          <div class="column is-12-mobile px-0 is-offset-1-desktop">
+            <h1 class="subtitle is-2 handwritten-tag has-text-centered-mobile">
+              Hi, I'm <strong>Álvaro</strong>.
+            </h1>
+            <div class="clear"></div>
+            <p class="has-text-centered-mobile mb-4">
+              In love with nature, music and technology. I started this lovely
+              journey of programming <strong id="yearsDifference"></strong> ago.
+            </p>
+            <p class="has-text-centered-mobile">
+              Always ready for new challenges
+            </p>
+          </div>
+          <!-- END DESCRIPTION -->
         </div>
-        <script src="js/helper.js"></script>
-    </body>
+      </section>
+      <!-- END INTRODUCTION -->
+      <!-- SKILLS -->
+      <section class="section handwritten-tag">
+        <!-- WRAPPER -->
+        <div class="wrapper mb-3">
+          <h2 class="subtitle is-3 handwritten-tag">
+            <strong>Skills</strong>
+          </h2>
+          <div class="columns mb-0 is-vcentered">
+            <div class="column mb-5">
+              <p class="subtitle is-6 mb-3">SwiftUI</p>
+              <progress class="progress is-primary" value="90" max="100">
+                90%
+              </progress>
+              <p class="subtitle is-6 mb-3">NextJS</p>
+              <progress class="progress is-primary" value="90" max="100">
+                90%
+              </progress>
+              <p class="subtitle is-6 mb-3">Flutter</p>
+              <progress class="progress is-primary" value="80" max="100">
+                80%
+              </progress>
+              <p class="subtitle is-6 mb-3">Codeigniter</p>
+              <progress class="progress is-primary" value="75" max="100">
+                75%
+              </progress>
+            </div>
+            <div
+              id="more-skills"
+              class="column panel py-4 px-5 pb-5 has-shadow is-offset-1-desktop is-offset-1-tablet has-background-light"
+            >
+              <h3 class="subtitle is-5 mb-3 handwritten-tag">
+                <strong>Languages</strong>
+              </h3>
+              <div class="tags are-large">
+                <span class="tag is-light is-info">Spanish (Native)</span>
+                <span class="tag is-light is-info">English</span>
+              </div>
+              <h3 class="subtitle is-5 mb-3 handwritten-tag">
+                <strong>And more …</strong>
+              </h3>
+              <div class="tags are-medium">
+                <span class="tag is-light is-primary">API RESTful</span>
+                <span class="tag is-light is-primary">Push notifications</span>
+                <span class="tag is-light is-primary">PHP</span>
+                <span class="tag is-light is-primary">HTML</span>
+                <span class="tag is-light is-primary">Javascript</span>
+                <span class="tag is-light is-primary">CSS</span>
+                <span class="tag is-light is-primary">MySQL</span>
+                <span class="tag is-light is-primary">Drupal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END WRAPPER -->
+      </section>
+      <!-- END SKILLS -->
+      <!-- WORK EXPERIENCE -->
+      <section class="section handwritten-tag">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+          <h2 class="subtitle is-3 handwritten-tag">
+            <strong>Experience</strong>
+          </h2>
+          <div class="columns mb-3 wrapper">
+            <div
+              class="column panel px-5 has-shadow is-12 handwritten-tag has-background-light"
+              data-handwritten-tag="table"
+            >
+              <table class="table mb-0">
+                <tbody>
+                  <tr class="has-background-light">
+                    <td><strong>Sep 2024 - Today</strong></td>
+                    <td>
+                      <strong class="is-uppercase has-text-info"
+                        >Drupal Developer</strong
+                      >
+                      <div class="organization">
+                        <a
+                          href="https://vasscompany.com/spain/es/"
+                          target="_blank"
+                        >
+                          VASS Company
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <p>&#x2022; Drupal development</p>
+                    </td>
+                  </tr>
+                  <tr class="has-background-light">
+                    <td><strong>Nov 2020 - Sep 2024</strong></td>
+                    <td>
+                      <strong class="is-uppercase has-text-info"
+                        >Full Stack Web Developer</strong
+                      >
+                      <div class="organization">
+                        <a href="https://www.axelspringer.es" target="_blank">
+                          Axel Springer SE
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <p>
+                        &#x2022; Maintenance and development with NextJS, React
+                        and Drupal
+                      </p>
+                      <p>
+                        &#x2022; Multiple integrations from advertising to user
+                        focused platform "Piano"
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="has-background-light">
+                    <td><strong>Jun 2018 - Nov 2020</strong></td>
+                    <td>
+                      <strong class="is-uppercase has-text-info"
+                        >Full Stack Web/App Developer</strong
+                      >
+                      <div class="organization">
+                        <a href="https://www.sulime.net" target="_blank">
+                          Sulime Diseño de Soluciones S.L.U
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </div>
+                      <p>
+                        &#x2022; Analysis, development, delpoyment and
+                        maintenance of several projects in PHP, Codeigniter and
+                        Flutter for Andalusian Health Public Service (SAS)
+                      </p>
+                      <p>
+                        &#x2022; Bidirectional integrations with RESTful and
+                        SOAP services with the Andalusian Health Public Service
+                        (SAS)
+                      </p>
+                      <p>
+                        &#x2022; WebSockets, API and push notification services
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="has-background-light">
+                    <td><strong>Mar 2015 - Jun 2018</strong></td>
+                    <td>
+                      <strong class="is-uppercase has-text-info"
+                        >Full Stack Web Developer</strong
+                      >
+                      <div class="has-text-grey organization">Elitech Lab</div>
+                      <p>
+                        &#x2022; Analysis, development, delpoyment to AWS and
+                        maintenance of several projects in PHP, Codeigniter,
+                        Drupal and Joomla
+                      </p>
+                      <p>&#x2022; Project management and teach lead</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- END WRAPPER -->
+      </section>
+      <!-- END WORK EXPERIENCE -->
+      <!-- PROJECTS -->
+      <section id="projects" class="section handwritten-tag">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+          <h2 class="subtitle is-3 handwritten-tag">
+            <strong>Worked on</strong>
+          </h2>
+          <!-- WEB PROJECTS WRAPPER -->
+          <div id="web" class="columns is-multiline web">
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/ab-logo.png" alt="Auto Bild" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.autobild.es" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >Auto Bild
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/bi-logo.png" alt="Business Insider" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.businessinsider.es" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >Business Insider
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/ch-logo.png" alt="Computer Hoy" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.computerhoy.com" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >Computer Hoy
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/hc-logo.png" alt="Hobby Consolas" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.hobbyconsolas.com" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >Hobby Consolas
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/tg-logo.png" alt="Top Gear" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.topgear.es" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >Top Gear
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/ph-logo.png" alt="PharmUX" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.pharmux.es" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >PharmUX
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img
+                      src="img/tc-logo.png"
+                      alt="Teleconsulta"
+                      style="width: 55px"
+                    />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <h4 class="card-footer-item">
+                    <span> Teleconsulta (SAS) </span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column is-3 handwritten-tag has-text-centered py-0"
+              data-handwritten-tag="img"
+            >
+              <div class="card has-shadow has-shadow-animated">
+                <div id="card-header" class="browser-bar">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="img/sb-logo.png" alt="School Bus Tracker" />
+                  </figure>
+                </div>
+                <div class="card-footer has-background-light">
+                  <a href="https://www.schoolbustrackerapp.com" target="_blank">
+                    <h4 class="card-footer-item">
+                      <span>
+                        <b
+                          >School Bus Tracker
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </span>
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WEB PROJECTS WRAPPER -->
+          <!-- APP PROJECTS WRAPPER -->
+          <div id="app" class="columns mb-0 has-text-centered">
+            <div class="column is-12">
+              <!-- FEATURED APP PROJECT -->
+              <div class="columns is-centered">
+                <div class="column is-12">
+                  <h3 class="subtitle is-3 m-0 handwritten-tag">
+                    <strong>Sevimetria</strong>
+                  </h3>
+                </div>
+              </div>
+              <div class="columns mb-6">
+                <div
+                  class="column pt-0 is-3-desktop is-3-tablet handwritten-tag"
+                  data-handwritten-tag="img"
+                >
+                  <div class="card has-shadow app-icon card-image">
+                    <figure class="image">
+                      <img src="img/sev-app-icon.png" alt="Sevimetria" />
+                    </figure>
+                  </div>
+                </div>
+                <div class="column has-text-left">
+                  <p class="mb-4">
+                    <strong>Sevimetria</strong> is a sleek and intuitive mobile
+                    app designed to keep you informed about real-time train
+                    arrivals on the <strong>Seville metro</strong>. Built with
+                    <strong>SwiftUI</strong>, Sevimetria provides up-to-date
+                    information on metro stops, train schedules, pricing and the
+                    remaining time for the next arrivals.
+                  </p>
+                  <p>
+                    With a simple and user-friendly interface, view detailed
+                    stop information, and track live updates to make sure you’re
+                    always on time.
+                  </p>
+                  <div
+                    class="columns has-text-right has-text-centered-mobile mt-2 store-buttons"
+                  >
+                    <div class="column">
+                      <!-- <a href="https://apps.apple.com/es/app/###" target="_blank"> -->
+                      <button
+                        class="button has-background-light has-shadow has-shadow-animated"
+                      >
+                        Coming soon ™ ...
+                      </button>
+                      <!-- </a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END FEATURED APP PROJECT -->
+              <div class="columns is-centered">
+                <div class="column mb-6">
+                  <h4 class="subtitle is-5 m-0 handwritten-tag">
+                    <strong>PharmUX</strong>
+                  </h4>
+                  <div
+                    class="column pt-0 is-3-desktop is-4-tablet is-4-mobile m-auto handwritten-tag"
+                    data-handwritten-tag="img"
+                  >
+                    <div class="card has-shadow app-icon card-image">
+                      <figure class="image">
+                        <img src="img/ph-app-icon.png" alt="PharmUX" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div
+                    class="columns is-justify-content-space-evenly mt-2 store-buttons"
+                  >
+                    <a
+                      href="https://apps.apple.com/es/app/pharmux/id1501512674"
+                      target="_blank"
+                    >
+                      <button
+                        class="button has-background-light has-shadow has-shadow-animated"
+                      >
+                        <b
+                          >App Store
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </button>
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.sulime.pharmux&hl=es_419&gl=US"
+                      target="_blank"
+                    >
+                      <button
+                        class="button has-background-light has-shadow has-shadow-animated"
+                      >
+                        <b
+                          >Google Play
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="column">
+                  <h4 class="subtitle is-5 m-0 handwritten-tag">
+                    <strong>DermaQ</strong>
+                  </h4>
+                  <div
+                    class="column pt-0 is-3-desktop is-4-tablet is-4-mobile m-auto handwritten-tag"
+                    data-handwritten-tag="img"
+                  >
+                    <div class="card has-shadow app-icon">
+                      <div class="card-image">
+                        <figure class="image">
+                          <img src="img/dq-app-icon.png" alt="DermaQ SD" />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="columns is-justify-content-space-evenly mt-2 store-buttons"
+                  >
+                    <a
+                      href="https://apps.apple.com/es/app/dermaq-sd/id1516314244"
+                      target="_blank"
+                    >
+                      <button
+                        class="button has-background-light has-shadow has-shadow-animated"
+                      >
+                        <b
+                          >App Store
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </button>
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.sulime.dermaqsd&hl=es&gl=US"
+                      target="_blank"
+                    >
+                      <button
+                        class="button has-background-light has-shadow has-shadow-animated"
+                      >
+                        <b
+                          >Google Play
+                          <i class="fa fa-xs fa-arrow-up-right-from-square"></i
+                        ></b>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END APP PROJECTS WRAPPER -->
+        </div>
+        <!-- END WRAPPER -->
+      </section>
+      <!-- END PROJECTS -->
+      <!-- FOOTER -->
+      <section
+        id="footer"
+        class="section handwritten-tag"
+        data-handwritten-tag="footer"
+      >
+        <div class="columns mb-0 mt-0">
+          <div
+            class="column panel has-shadow has-shadow-animated is-10 is-offset-1 is-10-mobile is-offset-1-mobile has-background-light"
+          >
+            <div class="columns is-multiline">
+              <div class="column is-12 has-text-centered">
+                <a
+                  href="mailto:alvarofernandez@cascajosa.com"
+                  target="_blank"
+                  class="has-text-dark pr-5"
+                >
+                  <span class="icon-text">
+                    <span class="icon is-large">
+                      <i class="fas fa-2x fa-envelope"></i>
+                    </span>
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Alvfercas"
+                  target="_blank"
+                  class="has-text-dark"
+                >
+                  <span class="icon-text">
+                    <span class="icon is-large">
+                      <i class="fas fa-2x fa-brands fa-github"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="column is-12 pb-5 has-text-centered">
+                <p class="content is-5">
+                  Website handcrafted by me with <strong>love</strong>
+                  <i class="fas fa-heart has-text-danger"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END FOOTER -->
+    </div>
+    <script src="js/helper.js"></script>
+  </body>
 </html>
