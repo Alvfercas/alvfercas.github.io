@@ -57,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     yearsDifference.toFixed() + ' years'
   )
 
-  console.log(updatedDescription)
-
   const ldJsonScript = document.querySelector(
     'script[type="application/ld+json"]'
   )
