@@ -50,7 +50,8 @@ button b {
   word-spacing: -6px;
 }
 
-td > p {
+td > p,
+#footer p {
   font-size: 15px;
 }
 
