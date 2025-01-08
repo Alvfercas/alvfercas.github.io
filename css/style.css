@@ -234,6 +234,10 @@ div.organization {
   color: #485fc7;
 }
 
+#working-on p {
+  line-height: 2rem;
+}
+
 #footer .has-shadow-animated:hover .fa-heart {
   transition: 0.3s;
   animation: 1.5s ease 0s infinite beat;
