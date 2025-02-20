@@ -67,4 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('description').innerHTML = updatedDescriptionWithTags
+
+  bulmaCarousel.attach('#carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+  })
 })

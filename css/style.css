@@ -212,6 +212,19 @@ div.organization {
   border-color: #485fc7;
 }
 
+#working-on .carousel {
+  margin-bottom: 50px;
+}
+
+#working-on .carousel .slider-navigation-previous {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+#working-on .carousel .slider-pagination {
+  padding: 0;
+  bottom: 0;
+}
+
 #web .card-footer {
   transition: 0.3s;
   border: 1px solid transparent;
