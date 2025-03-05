@@ -60,7 +60,7 @@ td > p:not(:last-child) {
 }
 
 .has-shadow {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .has-shadow-animated {
@@ -178,37 +178,33 @@ div.organization {
   width: 100px;
 }
 
-#projects #app .app-icon {
+#projects .app-icon {
   border-radius: 22.5%;
   width: 175px;
   margin: 0 auto;
 }
 
-#projects #app .store-item {
+#projects .store-item {
   border-radius: 1rem;
   width: 175px;
   margin: 0 auto;
 }
 
-#projects #app .store-item figure {
+#projects .store-item figure {
   border-radius: 1rem;
 }
 
-#projects #app .store-buttons {
-  display: flex;
-}
-
-#projects #app .store-buttons button {
+#projects .store-buttons button {
   color: black;
   display: inline-block;
   border-color: transparent;
 }
 
-#projects #app .store-buttons button b {
+#projects .store-buttons button b {
   color: #485fc7;
 }
 
-#projects #app .store-buttons button:hover {
+#projects .store-buttons button:hover {
   border-color: #485fc7;
 }
 
@@ -240,7 +236,7 @@ div.organization {
 
 #web .card-footer-item {
   color: black;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #web .card-footer-item b {
@@ -319,16 +315,16 @@ body.dark-mode #web .card-footer-item b {
   color: #1abc9c;
 }
 
-body.dark-mode #projects #app .store-buttons button {
+body.dark-mode #projects .store-buttons button {
   color: white;
   border-color: transparent;
 }
 
-body.dark-mode #projects #app .store-buttons button b {
+body.dark-mode #projects .store-buttons button b {
   color: #1abc9c;
 }
 
-body.dark-mode #projects #app .store-buttons button:hover {
+body.dark-mode #projects .store-buttons button:hover {
   color: white;
   border-color: #16a085;
 }
