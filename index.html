@@ -18,6 +18,27 @@
       content="Álvaro, Fernández, Cascajosa, Web, Flutter, desarrollo, desarrollador, development, developer, full stack"
     />
 
+    <!-- START OPEN GRAPH -->
+    <meta name="og:title" content="Álvaro Fernández Cascajosa" />
+    <meta
+      name="og:description"
+      content="In love with nature, music and technology. I started this lovely journey of programming {{years}} ago."
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://www.cascajosa.com" />
+    <meta name="og:image" content="img/profile.png" />
+    <meta name="og:site_name" content="cascajosa.com" />
+    <meta name="og:locale" content="es_ES" />
+    <!-- END OPEN GRAPH -->
+    <!-- START TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Álvaro Fernández Cascajosa" />
+    <meta
+      name="twitter:description"
+      content="In love with nature, music and technology. I started this lovely journey of programming {{years}} ago."
+    />
+    <!-- END TWITTER -->
+
     <title>Álvaro Fernández Cascajosa</title>
 
     <!-- START CSS -->
@@ -113,13 +134,17 @@
     </script>
     <!-- END LD+JSON -->
   </head>
-  <body class="handwritten-tag">
-    <a href="#" id="dark-mode-toggle" onClick="javascript:darkMode()">
+  <body>
+    <a
+      href="javascript:void()"
+      id="dark-mode-toggle"
+      onClick="javascript:darkMode()"
+    >
       <span class="icon is-large">
         <i id="dark-mode-icon" class="fas fa-lg fa-moon"></i>
       </span>
     </a>
-    <div class="container">
+    <div class="container handwritten-tag" data-handwritten-tag="body">
       <!-- INTRODUCTION -->
       <section id="introduction" class="section">
         <div class="columns is-vcentered is-mobile is-multiline">
