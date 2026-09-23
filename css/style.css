@@ -68,7 +68,8 @@ td > p:not(:last-child) {
 }
 
 .has-shadow-animated:hover {
-  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  box-shadow:
+    rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   scale: 0.97;
 }
@@ -137,7 +138,7 @@ div.organization {
   margin-bottom: 5rem;
 }
 
-#projects #card-header.browser-bar {
+#projects .card-header.browser-bar {
   border-radius: 4px 4px 0 0;
   background-color: #3d4044;
   height: 5px;
@@ -148,7 +149,7 @@ div.organization {
   padding: 10px 5px;
 }
 
-#projects #card-header.browser-bar .circle {
+#projects .card-header.browser-bar .circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -157,15 +158,15 @@ div.organization {
   margin: 0px 2px;
 }
 
-#projects #card-header.browser-bar .circle:nth-child(1) {
+#projects .card-header.browser-bar .circle:nth-child(1) {
   background-color: #ff5f58;
 }
 
-#projects #card-header.browser-bar .circle:nth-child(2) {
+#projects .card-header.browser-bar .circle:nth-child(2) {
   background-color: #febb2d;
 }
 
-#projects #card-header.browser-bar .circle:nth-child(3) {
+#projects .card-header.browser-bar .circle:nth-child(3) {
   background-color: #29c840;
 }
 

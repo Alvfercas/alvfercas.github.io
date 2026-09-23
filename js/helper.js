@@ -48,10 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sharedDescription = document.getElementById('shared-description')
 
-  const updatedDescriptionWithTags = sharedDescription.content.replace(
-    '{{years}}',
-    '<strong>' + yearsDifference.toFixed() + ' years</strong>'
-  )
+  const updatedDescriptionWithTags = sharedDescription.content
+    .replace(
+      '{{years}}',
+      '<strong>' + yearsDifference.toFixed() + ' years</strong>'
+    )
+    .replace(/\n/g, '<br>')
   const updatedDescription = sharedDescription.content.replace(
     '{{years}}',
     yearsDifference.toFixed() + ' years'
