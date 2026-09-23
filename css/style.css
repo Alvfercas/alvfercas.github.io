@@ -130,6 +130,11 @@ div.organization {
   padding: 0.75rem;
 }
 
+#experience table td:first-child {
+  white-space: nowrap;
+  vertical-align: top;
+}
+
 #projects p {
   line-height: 2rem;
 }
